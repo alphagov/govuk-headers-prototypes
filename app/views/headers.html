@@ -1,0 +1,87 @@
+{% extends "blank_template.html" %}
+
+{% block page_title %}
+  Headers on GOV.UK
+{% endblock %}
+
+{% block header %}
+
+<div class="guidance">
+	<h1 class="heading-xlarge">Headers for UK government web sites</h1>
+	<h2 class="heading-large">GOV.UK</h2>
+	<p>This is the standard GOV.UK header:</p>
+</div>
+
+{% include "includes/header-govuk.html" %}
+
+<div class="guidance">
+	<p>Here it is with a search box:</p>
+</div>
+
+{% include "includes/header-govuk-search.html" %}
+
+<div class="guidance">
+	<p>Here's the version for specialist content:</p>
+</div>
+
+{% include "includes/header-govuk-specialist.html" %}
+
+<div class="guidance">
+	<p>Services on GOV.UK look like this:</p>
+</div>
+
+{% include "includes/header-govuk-service.html" %}
+
+<div class="guidance">
+	<p>If you need to you can add navigation, like this.</p>
+</div>
+
+{% include "includes/header-govuk-service-nav.html" %}
+
+<div class="guidance">
+	<h2 class="heading-large">Other GOV.UK products</h2>
+	<p>GDS also makes products for teams building government services.</p>
+	<p>They have headers that look like this:</p>
+</div>
+
+
+{% include "includes/header-govuk-notify.html" %}
+<br>
+{% include "includes/header-govuk-verify.html" %}
+<br>
+{% include "includes/header-govuk-pay.html" %}
+<br>
+{% include "includes/header-govuk-frontend.html" %}
+<br>
+{% include "includes/header-govuk-service-manual.html" %}
+<br>
+{% include "includes/header-govuk-digital-marketplace.html" %}
+
+
+<div class="guidance">
+	<h2 class="heading-large">Full width headers</h2>
+	<p>Headers can be full width if the content on the page requires it:</p>
+</div>
+
+{% include "includes/header-govuk-frontend-full-width.html" %}
+
+
+<div class="guidance">
+	<h2 class="heading-large">Departmental headers</h2>
+	<p>If your users are employees of a specific department you
+		can use these headers:
+	</p>
+</div>
+
+{% include "includes/header-departments.html" %}
+
+{% include "includes/header-example-1.html" %}
+
+
+<br><br><br><br><br><br><br><br>
+
+{% endblock %}
+
+
+
+
